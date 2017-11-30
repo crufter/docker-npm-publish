@@ -8,6 +8,6 @@ WORKDIR /usr/src/app/
 
 RUN npm install -g typescript
 
-COPY publish-npm.sh /bin/
+COPY publish-npm.sh /
 
-ENTRYPOINT ["/bin/publish-npm.sh"]
+ENTRYPOINT ["/bin/bash", "/publish-npm.sh"]
